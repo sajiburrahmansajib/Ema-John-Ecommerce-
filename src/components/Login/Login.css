@@ -1,0 +1,56 @@
+.form-container {
+    width: 500px;
+    height: 600px;
+    margin: 20px auto;
+    border: 1px solid gray;
+    border-radius: 8px;
+
+}
+
+.form-title {
+    text-align: center;
+    color: crimson;
+}
+
+.form-control label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form {
+    padding: 0px 44px;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+.form-control input {
+    width: 415px;
+    height: 55px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.btn-login {
+    margin-top: 44px;
+    width: 415px;
+    height: 55px;
+    background: rgba(255, 153, 0, 0.3);
+    border-radius: 5px;
+    border: 0px;
+    font-size: large;
+}
+
+.btn-login:hover {
+    background: rgba(255, 153, 0, 0.8);
+}
+
+.message {
+    text-align: center;
+}
+
+.create-new-account {
+    color: #FF9900;
+}
