@@ -6,7 +6,7 @@ const About = () => {
     return (
         <div>
             <h2>Secret about us!!!</h2>
-            <p>user: {user.email}</p>
+            <p>user: {user?.email}</p>
         </div>
     );
 };

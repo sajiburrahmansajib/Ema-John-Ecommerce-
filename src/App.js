@@ -8,6 +8,8 @@ import Inventory from './components/Inventory/Inventory';
 import { productsAndCartLoader } from './loaders/productsAndCartLoader';
 import Login from './components/Login/Login';
 import SignUp from './components/SingUp/SignUp';
+import Shipping from './components/Shipping/Shipping';
+import PrivateRoutes from './Routes/PrivateRoutes';
 
 
 
@@ -19,7 +21,7 @@ function App() {
       children: [
         {
           path: '/',
-          loader: () => fetch('products.json'),
+          loader: () => fetch('http://localhost:5000/products'),
           element: <Shop></Shop>
         },
         {
@@ -29,7 +31,11 @@ function App() {
         },
         {
           path: 'inventory',
-          element: <Inventory></Inventory>
+          element: <PrivateRoutes> <Inventory></Inventory></PrivateRoutes>
+        },
+        {
+          path: 'shipping',
+          element: <PrivateRoutes><Shipping></Shipping></PrivateRoutes>
         },
         {
           path: 'about',
